@@ -2,6 +2,7 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'stencil-storybook',
+  globalStyle: 'src/global/build/tailwind.css',
   outputTargets: [
     {
       type: 'dist',

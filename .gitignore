@@ -2,6 +2,8 @@ dist/
 www/
 loader/
 
+src/global/build/
+
 *~
 *.sw[mnpcod]
 *.log

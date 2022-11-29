@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
 
-    <script type="module" src="/build/stencil-storybook.esm.js"></script>
-    <script nomodule src="/build/stencil-storybook.js"></script>
-  </head>
-  <body>
-    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/stencil-storybook.esm.js"></script>
+  <script nomodule src="/build/stencil-storybook.js"></script>
+  <link rel="stylesheet" href="build/stencil-storybook.css" />
+</head>
+
+<body class="max-w-2xl m-auto bg-slate-100">
+  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  <my-tailwind-component>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus est debitis, similique id ut perferendis
+    exercitationem possimus eaque! Placeat voluptatum eveniet quaerat facilis quia vel ducimus reiciendis tempore atque
+    laborum!
+  </my-tailwind-component>
+</body>
+
 </html>
