@@ -1,0 +1,27 @@
+services:
+  stencil:
+    image: node:lts
+    user: node
+    working_dir: /home/node/app
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - 3333:3333
+    command: "npm run start"
+  storybook:
+    image: node:lts
+    user: node
+    working_dir: /home/node/app
+    environment:
+      - NODE_OPTIONS=--openssl-legacy-provider
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - 6006:6006
+    command: "npm run storybook"
+  node:
+    image: node:lts
+    user: node
+    working_dir: /home/node/app
+    volumes:
+      - ./:/home/node/app
